@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Profil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .section {
+      padding: 40px 20px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Section 1 */
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+    }
+
+    .menu .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu nav button {
+      background: none;
+      border: none;
+      margin-left: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .menu nav button:hover {
+      color: #007BFF;
+    }
+
+    /* Section 2 */
+    .two-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .two-columns .text-column {
+      flex: 1;
+    }
+
+    .two-columns .text-column h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .two-columns .text-column p {
+      margin-bottom: 20px;
+    }
+
+    .two-columns .text-column button {
+      background: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .two-columns .image-column {
+      flex: 1;
+    }
+
+    .two-columns .image-column img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    /* Section 3 */
+    .about {
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .about-boxes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 kolom tetap di layar besar */
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about-boxes div {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    /* Responsive untuk layar kecil */
+    @media (max-width: 768px) {
+      .about-boxes {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-boxes {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Section 4 */
+    .portfolio {
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      background: #fff;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+      text-align: center;
+      margin: 5px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Menu -->
+  <section class="section menu">
+    <div class="brand">Brand</div>
+    <nav>
+      <button>Header</button>
+      <button>Biodata</button>
+      <button>Portofolio</button>
+    </nav>
+  </section>
+
+  <!-- Section 2: Header 2 Kolom -->
+  <section class="section">
+    <div class="two-columns">
+      <div class="text-column">
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Ini adalah contoh header dengan dua kolom. Kolom kirim berisi teks seperti ini.</p>
+        <button>Pelajari Lebih Lanjut</button>
+      </div>
+      <div class="image-column">
+        <img src="https://via.placeholder.com/400x300" alt="Gambar Profil">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: About Me -->
+  <section class="section about">
+    <h2>About Me</h2>
+    <p>A brief Introduction about myself</p>
+    <div class="about-boxes">
+      <div>Full Name</div>
+      <div>Education</div>
+      <div>Pekerjaan</div>
+      <div>Contact</div>
+      <div>Hobi</div>
+      <div>Alamat</div>
+    </div>
+  </section>
+
+  <!-- Section 4: Portfolio -->
+  <section class="section portfolio">
+    <h2>Portofolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Proyek 1">
+        <p>Proyek 1</p>
+        <p>Deskripsi Proyek 1.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Proyek 2">
+        <p>Proyek 2</p>
+        <p>Deskripsi Proyek 2.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Proyek 3">
+        <p>Proyek 3</p>
+        <p>Deskripsi Proyek 3.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
