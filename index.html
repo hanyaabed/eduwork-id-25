@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Halaman Profil</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
@@ -38,10 +35,6 @@
     .menu .brand {
       font-size: 24px;
       font-weight: bold;
-    }
-
-    .menu nav a {
-      text-decoration: none;
     }
 
     .menu nav button {
@@ -93,7 +86,7 @@
       max-width: 100%;
       height: auto;
       border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
 
     /* Section 3 */
@@ -114,6 +107,7 @@
     .about-boxes {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      /* 3 kolom tetap di layar besar */
       gap: 20px;
       max-width: 1000px;
       margin: 0 auto;
@@ -127,6 +121,7 @@
       text-align: center;
     }
 
+    /* Responsive untuk layar kecil */
     @media (max-width: 768px) {
       .about-boxes {
         grid-template-columns: repeat(2, 1fr);
@@ -173,23 +168,23 @@
       text-align: center;
       margin: 5px 0;
     }
-
   </style>
 </head>
+
 <body>
 
   <!-- Section 1: Menu -->
-  <section class="section menu" id="menu">
+  <section class="section menu">
     <div class="brand">Brand</div>
     <nav>
-      <a href="#header"><button>Header</button></a>
-      <a href="#biodata"><button>Biodata</button></a>
-      <a href="#portofolio"><button>Portofolio</button></a>
+      <button>Header</button>
+      <button>Biodata</button>
+      <button>Portofolio</button>
     </nav>
   </section>
 
-  <!-- Section 2: Header -->
-  <section class="section" id="header">
+  <!-- Section 2: Header 2 Kolom -->
+  <section class="section">
     <div class="two-columns">
       <div class="text-column">
         <h1>Selamat Datang di Website Saya</h1>
@@ -202,8 +197,8 @@
     </div>
   </section>
 
-  <!-- Section 3: Biodata -->
-  <section class="section about" id="biodata">
+  <!-- Section 3: About Me -->
+  <section class="section about">
     <h2>About Me</h2>
     <p>A brief Introduction about myself</p>
     <div class="about-boxes">
@@ -216,8 +211,8 @@
     </div>
   </section>
 
-  <!-- Section 4: Portofolio -->
-  <section class="section portfolio" id="portofolio">
+  <!-- Section 4: Portfolio -->
+  <section class="section portfolio">
     <h2>Portofolio</h2>
     <div class="portfolio-grid">
       <div class="portfolio-item">
@@ -239,4 +234,5 @@
   </section>
 
 </body>
+
 </html>
