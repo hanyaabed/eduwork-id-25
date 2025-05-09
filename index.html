@@ -11,6 +11,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       color: #333;
@@ -23,25 +27,17 @@
       border-bottom: 1px solid #ccc;
     }
 
-    /* Section 1: Navbar */
+    /* Section 1 */
     .menu {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #fff;
-      padding: 10px 20px;
     }
 
     .menu .brand {
       font-size: 24px;
       font-weight: bold;
-    }
-
-    .menu nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 15px;
     }
 
     .menu nav a {
@@ -51,6 +47,7 @@
     .menu nav button {
       background: none;
       border: none;
+      margin-left: 15px;
       font-size: 16px;
       cursor: pointer;
     }
@@ -59,7 +56,7 @@
       color: #007BFF;
     }
 
-    /* Section 2: Header */
+    /* Section 2 */
     .two-columns {
       display: flex;
       flex-wrap: wrap;
@@ -99,7 +96,7 @@
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
-    /* Section 3: About */
+    /* Section 3 */
     .about {
       text-align: center;
     }
@@ -142,7 +139,7 @@
       }
     }
 
-    /* Section 4: Portofolio */
+    /* Section 4 */
     .portfolio {
       text-align: center;
     }
